@@ -14,6 +14,11 @@
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
+        <?php
+        if (isset($_GET['error'])) {
+            echo '<p style="color:red;">Invalid username or password</p>';
+        }
+        ?>
     </div>
 </body>
 </html>

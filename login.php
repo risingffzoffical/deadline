@@ -17,13 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: success.php");
         exit;
     } else {
-        // Authentication failed, redirect back to index.php with error message
-        header("Location: index.php?error=1");
+        // Authentication failed, redirect back to index.html with error message
+        header("Location: index.html?error=1");
         exit;
     }
 } else {
-    // If someone tries to access login.php directly, redirect to index.php
-    header("Location: index.php");
+    // If someone tries to access login.php directly, redirect to index.html
+    header("Location: index.html");
     exit;
 }
 ?>
